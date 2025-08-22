@@ -6,7 +6,7 @@ const app = express();
 const swaggerDocument =YAML.load("./docs/yaml")
 
 app.use(express.json());
-app.use()
+
 app.use("/docs",swaggerUi.serve,swaggerUi.setup(swaggerDocument))
 app.use("/api", router);
  //ex
@@ -14,6 +14,6 @@ app.use("/api", router);
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-    console.log(`swagger run at http://localhost:3000/docss`);
+    console.log(`swagger run at http://localhost:3000/docs`);
 });
  
