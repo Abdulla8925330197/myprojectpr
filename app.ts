@@ -9,7 +9,7 @@ app.use(express.json());
 app.use()
 app.use("/docs",swaggerUi.serve,swaggerUi.setup(swaggerDocument))
 app.use("/api", router);
- //
+ //ex
 //port 
 const PORT = 3000;
 app.listen(PORT, () => {
